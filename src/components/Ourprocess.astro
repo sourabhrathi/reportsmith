@@ -1,0 +1,283 @@
+---
+import logo from "../images/woman.png";
+import logo1 from "../images/hand.png";
+import Stage from "../images/stage.png";
+
+import "../styles/global.css";
+---
+
+<section class="lesttalk">
+    <div class="container mx-auto pt-12 pding">
+        <div class="flex flex-row">
+            <div class="w-full">
+                <h2 class="talkhaed">Our Process</h2>
+            </div>
+        </div>
+        <div class="flex flex-row justify-center align-middle">
+            <div class="columns-1 w-11/12 talkform letstalkform">
+                <div class="talkimgwidth1 talkimg">
+                    <img src={logo.src} alt="" />
+                </div>
+
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 1248 670"
+                    fill="none"
+                >
+                    <path
+                        d="M1 599.5C0.723858 599.5 0.5 599.724 0.5 600C0.5 600.276 0.723858 600.5 1 600.5V599.5ZM257 600V600.5H257.5V600H257ZM257 539.5V539H256.5V539.5H257ZM481 539.5V540H481.5V539.5H481ZM481 421V420.5H480.5V421H481ZM736 421V421.5H736.5V421H736ZM736 240V239.5H735.5V240H736ZM992 240V240.5H992.5V240H992ZM992 1V0.5H991.5V1H992ZM1 600.5H257V599.5H1V600.5ZM257.5 600V539.5H256.5V600H257.5ZM257 540H481V539H257V540ZM481.5 539.5V421H480.5V539.5H481.5ZM481 421.5H736V420.5H481V421.5ZM736.5 421V240H735.5V421H736.5ZM736 240.5H992V239.5H736V240.5ZM992.5 240V1H991.5V240H992.5ZM992 1.5H1248V0.5H992V1.5Z"
+                        fill="white"></path>
+
+                    <text x="1015" y="40" fill="#fff" class="headings">
+                        <tspan x="1015" dy="0">Heading</tspan>
+                    </text>
+                    <text x="1015" y="60" fill="#fff" class="para">
+                        <tspan x="1015" dy="0"
+                            >Vulputate sapien nec sagittis aliquam
+                        </tspan>
+                        <tspan x="1015" dy="16"
+                            >Malesuada bibendum arcu vitae.</tspan
+                        >
+                    </text>
+
+                    <text x="760" y="280" fill="#fff" class="headings">
+                        <tspan x="760" dy="0">Heading</tspan>
+                    </text>
+                    <text x="760" y="300" fill="#fff" class="para">
+                        <tspan x="760" dy="0"
+                            >Vulputate sapien nec sagittis aliquam</tspan
+                        >
+                        <tspan x="760" dy="20"
+                            >Malesuada bibendum arcu vitae.</tspan
+                        >
+                    </text>
+
+                    <text x="505" y="460" fill="#fff" class="headings">
+                        <tspan x="505" dy="0">Heading</tspan>
+                    </text>
+                    <text x="505" y="480" fill="#fff" class="para">
+                        <tspan x="505" dy="0"
+                            >Vulputate sapien nec sagittis aliquam</tspan
+                        >
+                        <tspan x="505" dy="20"
+                            >Malesuada bibendum arcu vitae.</tspan
+                        >
+                    </text>
+
+                    <text x="280" y="580" fill="#fff" class="headings">
+                        <tspan x="280" dy="0">Heading</tspan>
+                    </text>
+                    <text x="280" y="600" fill="#fff" class="para">
+                        <tspan x="280" dy="0"
+                            >Vulputate sapien nec sagittis aliquam</tspan
+                        >
+                        <tspan x="280" dy="20"
+                            >Malesuada bibendum arcu vitae.</tspan
+                        >
+                    </text>
+
+                    <text x="10" y="630" fill="#fff" class="headings">
+                        <tspan x="10" dy="0">Heading</tspan>
+                    </text>
+                    <text x="10" y="650" fill="#fff" class="para">
+                        <tspan x="10" dy="0"
+                            >Vulputate sapien nec sagittis aliquam
+                        </tspan>
+                        <tspan x="10" dy="20"
+                            >Malesuada bibendum arcu vitae.</tspan
+                        >
+                    </text>
+                </svg>
+
+                <div class="talkimgwidth2 talkimg2">
+                    <img src={logo1.src} alt="" />
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+    .lesttalk {
+        background: #0047ab;
+    }
+    .talkhaed {
+        font-family: "DM Serif Display";
+        font-size: 64px;
+        font-weight: 400;
+        line-height: 74px;
+        letter-spacing: 0em;
+        text-align: center;
+        color: #fcf4ed;
+    }
+    .talkform {
+        padding: 30px;
+    }
+    .letstalkform {
+        position: relative;
+    }
+    .talkimg {
+        position: absolute;
+        bottom: 99px;
+        left: -54px;
+        right: 0;
+    }
+
+    .talkimg2 {
+        position: absolute;
+        right: -64px;
+        bottom: 0;
+        top: 25px;
+    }
+
+    .talkimgwidth1 {
+        width: 114px;
+    }
+    .talkimgwidth2 {
+        width: 104px;
+    }
+    .contenetbox {
+        /* width: 300px; */
+        position: absolute;
+        top: 15%;
+        left: 80%;
+    }
+
+    svg {
+        position: relative;
+    }
+
+    .headings {
+        position: absolute;
+        color: #fff;
+        font-family: "DM Serif Display";
+        font-size: 20px;
+        font-weight: 400;
+    }
+    .para {
+        color: #f5f5f5;
+        font-family: "Open Sans";
+        font-size: 12px;
+        font-weight: 400;
+    }
+    @media screen and (max-width: 1440px) {
+        .talkhaed {
+            font-size: 55px;
+        }
+        .talkimgwidth1 {
+            width: 105px;
+        }
+        .talkimg {
+            position: absolute;
+            bottom: 82px;
+            left: -43px;
+            right: 0;
+        }
+    }
+    @media screen and (max-width: 1200px) {
+        .talkhaed {
+            font-size: 45px;
+        }
+        .talkimgwidth1 {
+            width: 90px;
+        }
+        .talkimg {
+            position: absolute;
+            bottom: 72px;
+            left: -31px;
+            right: 0;
+        }
+        .talkimgwidth2 {
+            width: 75px;
+        }
+        .talkimg2 {
+            position: absolute;
+            right: -43px;
+            bottom: 0;
+            top: 25px;
+        }
+    }
+    @media screen and (max-width: 1023px) {
+ 
+        .talkimg{
+            position: absolute;
+            bottom: 60px;
+            left: -31px;
+            right: 0;
+        }
+
+    }
+    @media screen and (max-width: 768px) {
+        .talkhaed {
+            font-size: 38px;
+        }
+        .talkimgwidth1 {
+            width: 70px;
+        }
+        .talkimg {
+            position: absolute;
+            bottom: 61px;
+            left: -18px;
+            right: 0;
+        }
+        .talkimgwidth2 {
+            width: 70px;
+        }
+        .talkimg2 {
+            position: absolute;
+            right: -38px;
+            bottom: 0;
+            top: 25px;
+        }
+    }
+    @media screen and (max-width:767px) {
+        .talkimg{
+    position: absolute;
+    bottom: 53px;
+    left: -18px;
+    right: 0;
+} 
+    }
+    @media screen and (max-width: 762px) {
+        .talkimg{
+    position: absolute;
+    bottom: 54px;
+    left: -18px;
+    right: 0;
+}
+    }
+    @media screen and (max-width: 500px) {
+        .talkimg {
+    position: absolute;
+    bottom: 46px;
+    left: -10px;
+    right: 0;
+}
+.talkimgwidth1 {
+    width: 57px;
+}
+    }
+    @media screen and (max-width: 425px) {
+        .talkhaed {
+            font-size: 35px;
+            line-height: 38px;
+        }
+        .pding {
+            padding-top: 2rem !important;
+        }
+        .talkimgwidth1 {
+            width: 50px;
+        }
+        .talkimg {
+            bottom: 42px;
+            left: -8px;
+        }
+        .talkimgwidth2 {
+            width: 50px;
+        }
+        .talkimg2 {
+            right: -20px;
+            top: 25px;
+        }
+    }
+</style>

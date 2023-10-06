@@ -1,0 +1,177 @@
+---
+import git1 from "../images/git1.png";
+import git2 from "../images/git2.png";
+
+import "../styles/global.css";
+---
+
+<section>
+  <div class="container mx-auto ">
+    <div class="flex flex-row py-10">
+      <div class="w-full">
+        <div>
+          <h2 class="headclient">Sit amet aliquam id diam</h2>
+        </div>
+
+        <div
+          class="grid lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-2 gap-x-10 gap-y-20 pt-10 lg:pt-14 md:pt-12 sm:pt-10"
+        >
+          <div class="flex items-center justify-center">
+            <div class="featimg">
+              <img src={git1.src} />
+            </div>
+            <div class="pl-3.5 basis-60">
+              <p class="mailadd">Cover Design</p>
+              <span class="maildesc"
+                >Vulputate sapien nec sagittis aliquam malesuada bibendum arcu
+                vitae.</span
+              >
+            </div>
+          </div>
+          <div class="flex items-center justify-center">
+            <div class="featimg">
+              <img src={git2.src} />
+            </div>
+            <div class="pl-3.5 basis-60">
+              <p class="mailadd">Data Visualisation</p>
+              <span class="maildesc"
+                >Risus viverra adipiscing at in tellus. Placerat in egestas erat</span
+              >
+            </div>
+          </div>
+          <div class="flex items-center justify-center">
+            <div class="featimg">
+              <img src={git1.src} class="" />
+            </div>
+
+            <div class="pl-3.5 basis-60">
+              <p class="mailadd">Cover Design</p>
+              <span class="maildesc"
+                >Vulputate sapien nec sagittis aliquam malesuada bibendum arcu
+                vitae.</span
+              >
+            </div>
+          </div>
+          <div class=" flex items-center justify-center">
+            <div class="featimg">
+              <img src={git2.src} />
+            </div>
+            <div class="pl-3.5 basis-60">
+              <p class="mailadd">Data Visualisation</p>
+              <span class="maildesc"
+                >Risus viverra adipiscing at in tellus. Placerat in egestas erat</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .featimg {
+    width: 100px;
+  }
+  .maildesc {
+    color: #212121;
+    font-family: "Open Sans";
+    font-size: 12px;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  .headclient {
+    font-family: "DM Serif Display";
+    font-size: 64px;
+    font-weight: 400;
+    line-height: 88px;
+    letter-spacing: 0em;
+    text-align: center;
+  }
+
+  .widthForContentAll {
+    width: calc(100% - 50px);
+  }
+
+  .mailadd {
+    color: #000;
+    font-family: "DM Serif Display";
+    font-size: 20px;
+    font-weight: 400;
+  }
+
+  .FEATURES {
+    color: #fedd00;
+    font-size: 36px;
+    font-family: var(--EVERETT-REGULAR);
+    font-weight: 700;
+    line-height: 43px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+
+  .featurehove {
+    background-color: #ebebeb;
+    cursor: pointer;
+  }
+  .featurehove p {
+    width: 260px;
+    font-family: "Montserrat";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+  .featurehove:hover {
+    background-color: #4616cb;
+    color: white;
+    transition: 0.5s;
+  }
+
+  .featurehove {
+    height: 155px;
+  }
+
+  .featimgcol {
+    margin-right: 70px;
+  }
+  @media screen and (max-width: 1440px) {
+    .headclient {
+      font-size: 55px;
+    }
+  }
+
+  @media screen and (max-width: 1024px) {
+    .headclient {
+      font-size: 45px;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .headclient {
+      font-size: 38px;
+    }
+    .mailadd {
+      font-size: 18px;
+    }
+    .maildesc {
+      font-size: 11px;
+    }
+  }
+  @media screen and (max-width: 425px) {
+    .headclient {
+      font-size: 32px;
+      line-height: 40px;
+    }
+    .featimg img {
+      width: 75px;
+    }
+    .maildesc {
+      font-size: 11px;
+    }
+    .mailadd {
+      font-size: 18px;
+    }
+  }
+</style>

@@ -1,0 +1,230 @@
+---
+import logo from "../images/contact.png";
+import mail from "../images/contactmail.png";
+import phone from "../images/contactphone.png";
+import password from "../images/contactpassword.png";
+
+import "../styles/global.css";
+---
+
+<section class="whyusmain">
+    <div class="container mx-auto contain">
+        <div>
+            <div><h1 class="bringhead">Contact Us</h1></div>
+        </div>
+        <div
+            class="lg:flex md:flex justify-center items-center flex-col sm:flex-row"
+        >
+            <div class="w-full sm:w-full md:w-2/5 lg:w-1/2 flex justify-center">
+                <div class="max-w-full imgwidth" style="width: 500px;">
+                    <img src={logo.src} alt="" class="w-full h-auto" />
+                </div>
+            </div>
+
+            <div class="w-full sm:w-full md:w-3/5 lg:w-1/2 flex justify-center">
+                <!-- <div class="flex flex-col"> -->
+                <div class="flex justify-center flex-col design">
+                    <div class="flex phonep">
+                        <div class="featimg">
+                            <img src={mail.src} />
+                        </div>
+                        <div class="flex mail">
+                            <span class="mailadd"
+                                >Mail:<span class="maildesc"
+                                    >info@designboxindia.com</span
+                                ></span
+                            >
+                        </div>
+                    </div>
+                    <div class="flex phonep">
+                        <div class="featimg">
+                            <img src={phone.src} />
+                        </div>
+                        <div class="mail flex">
+                            <span class="mailadd"
+                                >Phone:<span class="maildesc"
+                                    >+91 9910409680</span
+                                ></span
+                            >
+                        </div>
+                    </div>
+                    <div class="flex phonep">
+                        <div class="featimg">
+                            <img src={password.src} />
+                        </div>
+                        <div class="mail flex">
+                            <span class="mailadd"
+                                >Address:<span class="maildesc"
+                                    >AAC-006 2nd Floor,Shipra Krishna Azure,
+                                    Kaushambi,Ghaziabad, Uttar Pradesh, India</span
+                                ></span
+                            >
+                        </div>
+                    </div>
+                </div>
+                <!-- </div> -->
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+    .contain {
+        /* padding-top:3rem ; */
+        padding-bottom: 130px;
+    }
+    .whyusmain {
+        background: #fcf4ed;
+    }
+    .featimg {
+        width: 100px;
+        /* height: 100px; */
+    }
+    .bringreport {
+        background: #fcf4ed;
+        height: calc(100vh - 80px);
+    }
+    .bringhead {
+        font-family: "DM Serif Display";
+        font-size: 64px;
+        font-weight: 400;
+        line-height: 88px;
+        letter-spacing: 0em;
+        text-align: center;
+        margin-top: 80px;
+        padding-top: 30px;
+        padding-bottom: 15px;
+        color: #000;
+    }
+    .mail {
+        width: calc(100% - 100px);
+    }
+
+    .mailadd {
+        color: #000;
+        font-family: " Open Sans";
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 600;
+        /* width: calc(100% - 100px); */
+        margin-left: 40px;
+        line-height: 30px;
+    }
+    .maildesc {
+        color: #000;
+        font-family: "Open Sans";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20px;
+    }
+    .design {
+        padding: 5px 140px;
+    }
+    .phonep {
+        padding-top: 40px;
+        align-items: center;
+    }
+
+    @media screen and (max-width: 1440px) {
+        .design {
+            padding: 5px 70px;
+        }
+    }
+
+    @media screen and (max-width: 1024px) {
+        .imgwidth {
+            width: 360px !important;
+        }
+        .design {
+            padding: 5px 20px;
+        }
+        .phonep {
+            padding-top: 28px;
+            align-items: center;
+        }
+        .mailadd {
+            font-size: 23px;
+            margin-left: 30px;
+        }
+        .contain {
+            padding-bottom: 85px;
+        }
+
+        .maildesc {
+            font-size: 15px;
+        }
+        .bringhead {
+            font-size: 62px;
+        }
+    }
+    @media screen and (max-width: 1224px) {
+        .container {
+            max-width: 1200px !important;
+        }
+    }
+    @media screen and (max-width: 800px) {
+        .featimg {
+            width: 80px;
+        }
+        .bringhead {
+            font-size: 59px;
+        }
+        .phonep {
+            padding-top: 22px;
+            align-items: center;
+        }
+    }
+    @media screen and (max-width: 767px) {
+        .design {
+            padding: 5px 45px;
+        }
+    }
+    @media screen and (max-width: 550px) {
+        .imgwidth {
+            width: 260px !important;
+        }
+        .featimg {
+            width: 85px;
+        }
+        .mail {
+            width: calc(100% - 80px);
+        }
+        .bringhead {
+            font-size: 58px;
+        }
+        .imgwidth {
+            margin-top: 18px;
+        }
+        .design {
+            padding: 5px 9px;
+        }
+    }
+    @media screen and (max-width: 500px) {
+        .design {
+            padding: 5px 9px;
+        }
+    }
+
+    @media screen and (max-width: 425px) {
+        .maildesc {
+            font-size: 12px;
+        }
+        .mailadd {
+            font-size: 18px;
+            margin-left: 25px;
+        }
+        .featimg {
+            width: 70px;
+        }
+        .bringhead {
+            font-size: 40px;
+        }
+        .container {
+            padding-bottom: 85px;
+        }
+        .mail {
+            width: calc(100% - 70px);
+        }
+    }
+</style>

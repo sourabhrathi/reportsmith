@@ -1,0 +1,214 @@
+---
+import insta from "../images/insta.png";
+import linkd from "../images/linkd.png";
+import logo from "../images/Foot_logo.png";
+import logo1 from "../images/footer for jamstack.mp4";
+import logo2 from "../images/LatestFoot.mp4";
+---
+
+<footer class="mainjamfooter">
+    <div class="container mx-auto jfoot">
+        <div class="columns-10 reportsocialfoot">
+            <div class="firstimg">
+                <img class="" src={logo.src} alt="Jamstack Experts logo2" />
+            </div>
+            <div>
+                <div class="basis-1/5">
+                    <h4 class="footrepoitem">Annual Reports</h4>
+                </div>
+            </div>
+            <div>
+                <div class="basis-1/5">
+                    <h4 class="footrepoitem">CSR Reports</h4>
+                </div>
+            </div>
+            <div>
+                <div class="basis-1/5">
+                    <h4 class="footrepoitem">Half-yearly Reports</h4>
+                </div>
+            </div>
+            <div>
+                <div class="basis-1/5">
+                    <h4 class="footrepoitem">Sustainability Reports</h4>
+                </div>
+            </div>
+            <div>
+                <div class="basis-1/5">
+                    <h4 class="footrepoitem">Quarterly Report</h4>
+                </div>
+            </div>
+
+            <div class="flex items-center image_count">
+                <div class="socialreport">
+                    <img
+                        class="inline-block align-bottom"
+                        src={insta.src}
+                        alt=""
+                    />
+                </div>
+                <div class="socialreports socialreport">
+                    <img
+                        class="inline-block align-bottom"
+                        src={linkd.src}
+                        alt=""
+                    />
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<style>
+    .reportsocialfoot {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .socialreport {
+        width: 30px;
+        height: auto;
+    }
+
+    .footrepoitem {
+        font-family: "DM Serif Display";
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 27px;
+        letter-spacing: 0em;
+        text-align: left;
+    }
+
+    .socialreports {
+        margin-left: 10px;
+    }
+
+    .mainjamfooter {
+        background: #fcf4ed;
+    }
+    .jfoot {
+        padding: 30px 0px;
+    }
+
+    .jammain:hover {
+        transform: translateY(-20px);
+        border-bottom: 1px solid grey;
+    }
+    @media screen and (max-width: 1279px) {
+        .footrepoitem {
+            font-size: 17px;
+        }
+        .firstimg {
+            width: 65px;
+        }
+        .socialreport {
+            width: 28px;
+        }
+        .jfoot {
+            padding: 30px 18px;
+        }
+        .footrepoitem{
+    text-align: center;
+}
+    }
+
+    @media screen and (max-width: 1024px) {
+        .footrepoitem {
+            font-size: 16px;
+        }
+        .firstimg {
+            width: 60px;
+        }
+        .socialreport {
+            width: 25px;
+        }
+        .jfoot {
+            padding: 30px 18px;
+        }
+    }
+
+
+    @media screen and (max-width: 768px) {
+        .footrepoitem {
+            font-size: 14px;
+        }
+        .firstimg {
+            width: 54px;
+        }
+        .socialreport {
+            width: 22px;
+        }
+        .jfoot {
+            padding: 30px 15px;
+        }
+    }
+    @media screen and (max-width: 767px) {
+        .footrepoitem {
+            font-size: 13px;
+            line-height: normal;
+            text-align: center;
+        }
+        .reportsocialfoot {
+            position: relative;
+            top: 20px;
+        }
+        .firstimg {
+            position: absolute;
+            bottom: 21px;
+            width: 35px;
+            left: 0px;
+        }
+        .image_count {
+            position: absolute;
+            bottom: 21px;
+            right: 0px;
+        }
+        .socialreport {
+            width: 20px;
+        }
+        .jfoot {
+            padding: 30px 10px;
+        }
+    }
+@media screen and (max-width:517px){
+    .firstimg {
+            position: absolute;
+            bottom: 41px;
+            width: 35px;
+            left: 21px;
+        }
+        .image_count {
+            position: absolute;
+            bottom: 41px;
+            right: 21px;
+        }
+}
+    @media screen and (max-width: 425px) {
+        .footrepoitem {
+            font-size: 11px;
+            line-height: normal;
+            text-align: center;
+        }
+        .reportsocialfoot {
+            position: relative;
+            top: 20px;
+        }
+        .firstimg {
+            position: absolute;
+            bottom: 36px;
+            width: 38px;
+            left: 15px;
+        }
+        .image_count {
+            position: absolute;
+            bottom: 38px;
+            right: 15px;
+        }
+        .socialreport {
+            width: 20px;
+        }
+        .jfoot {
+            padding: 35px 10px;
+        }
+    }
+</style>

@@ -1,0 +1,254 @@
+---
+import logo1 from "../images/Why_uss2.png";
+import logo from "../images/Why_uss1.png";
+import "../styles/global.css";
+---
+
+<section class="whyusmain">
+    <div class="container mx-auto ">
+        <div class="lg:flex md:flex flex-col sm:flex-row flex flex-col-reverse sm:py-10 py-6">
+            <div class="basis-3/12 letswhyimg">
+                <div class="whyusimg"><img src={logo.src} alt="" /></div>
+            </div>
+            <div class="basis-3/6 whyusmaindesc">
+                <h2 class="whyushead">Why Us?</h2>
+                <p class="whyusdesc">
+                    <span class="whyboldtext">Quality,</span> a pillar on which
+                    we stand,
+                </p>
+                <p class="whyusdesc">
+                    <span class="whyboldtext">Trust</span> in our services, hand
+                    in hand.
+                </p>
+                <p class="whyusdesc">
+                    <span class="whyboldtext">An experienced team,</span>
+                     skilled and wise,
+                </p>
+                <p class="whyusdesc">
+                    Crafting reports with <span class="whyboldtext"
+                        >expertise.</span
+                    >
+                </p>
+            </div>
+            <div class="basis-3/12 letswhyimgg">
+                <div class="whyusimgg"><img src={logo1.src} alt="" /></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+    .whyusmain {
+        background: #fcf4ed;
+    }
+
+    .whyusdesc {
+        font-family: "Open Sans";
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 22px;
+        letter-spacing: 0em;
+        text-align: center;
+    }
+
+    .whyusmaindesc {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 150px 0px;
+    }
+
+    .whyushead {
+        font-family: "DM Serif Display";
+        font-size: 88px;
+        font-weight: 400;
+        line-height: 121px;
+        letter-spacing: 0em;
+        text-align: center;
+    }
+
+    .whyusimg {
+        width: 300px;
+    }
+
+    .whyusimgg {
+        width: 230px;
+    }
+
+    .whyushead {
+        font-family: "DM Serif Display";
+        font-size: 88px;
+        font-weight: 400;
+        line-height: 121px;
+        letter-spacing: 0em;
+        text-align: center;
+    }
+
+    .whyboldtext {
+        font-family: "Open Sans";
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 22px;
+        letter-spacing: 0em;
+        text-align: center;
+    }
+
+    .letswhyimg {
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+    }
+
+    .letswhyimgg {
+        display: flex;
+        justify-content: flex-start;
+    }
+    @media screen and (max-width: 1440px) {
+        .whyushead {
+            font-size: 60px;
+        }
+        .whyusdesc {
+            font-size: 14px;
+        }
+        .whyboldtext {
+            font-size: 14px;
+        }
+        .whyusimg {
+            width: 250px;
+        }
+        .whyusimgg {
+            width: 175px;
+        }
+    }
+    @media screen and (max-width: 1200px) {
+        .whyusimgg {
+            width: 200px;
+        }
+        .whyusimg {
+            width: 240px;
+        }
+    }
+    @media screen and (max-width: 1023px) {
+        .whyushead {
+            font-size: 55px;
+        }
+        .whyusdesc {
+            font-size: 13px;
+        }
+        .whyboldtext {
+            font-size: 13px;
+        }
+        .whyushead {
+            line-height: 85px;
+        }
+        .whyusimg {
+            width: 230px;
+        }
+        .whyusimgg {
+            width: 155px;
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        .letswhyimgg {
+            justify-content: center;
+        }
+        .letswhyimg {
+            justify-content: center;
+        }
+        .whyusimg {
+            width: 205px;
+        }
+    }
+
+    @media screen and (max-width: 767px) {
+        .letswhyimgg {
+            justify-content: center;
+        }
+        .letswhyimg {
+            justify-content: center;
+        }
+        .whyusimg {
+            width: 205px;
+        }
+        .whyushead {
+            font-size: 44px;
+        }
+        .whyusmaindesc {
+            font-size: 12px;
+        }
+        .whyboldtext {
+            font-size: 12px;
+        }
+        .whyusimg {
+            width: 190px;
+        }
+        .whyusimgg {
+            width: 130px;
+        }
+        .whyusmaindesc {
+            padding: 120px 0px;
+        }
+    }
+    @media screen and (max-width: 639px) {
+        .whyusmaindesc {
+            padding: 30px 0px;
+        }
+    }
+    @media screen and (max-width: 425px) {
+        .whyusimgg {
+            display: none;
+        }
+        .whyusmaindesc {
+            padding: 24px 0px;
+        }
+        .letswhyimg {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .whyushead {
+            font-size: 40px;
+            line-height: 60px;
+        }
+        .whyusdesc {
+            font-size: 12px;
+        }
+        .whyboldtext {
+            font-size: 12px;
+        }
+        .whyusimg {
+            width: 150px;
+        }
+    }
+    @media screen and (max-width: 375px) {
+        .whyusimgg {
+            display: none;
+        }
+        .whyusmaindesc {
+            padding: 24px 0px;
+        }
+        .letswhyimg {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .whyushead {
+            font-size: 32px;
+            line-height: 60px;
+        }
+        .whyusdesc {
+            font-size: 10px;
+            line-height: 18px;
+        }
+        .whyboldtext {
+            font-size: 10px;
+            line-height: 18px;
+
+        }
+        .whyusimg {
+            width: 150px;
+        }
+    }
+</style>

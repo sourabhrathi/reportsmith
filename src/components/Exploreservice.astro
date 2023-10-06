@@ -1,0 +1,837 @@
+---
+import { gsap } from "gsap";
+import news from "../images/news.png";
+import computer from "../images/computer.png";
+import manmount from "../images/manmount.png";
+import Animate from "../images/Animate.png";
+import handdroup from "../images/handdroup.png";
+import buttonf from "../images/buttonf.png";
+---
+
+<section class="scene section" id="sticky">
+  <div class="containnw">
+    <div class="box1">
+      <h1 class="bringheads">Explore Our Services</h1>
+      <div class="flex justify-center">
+        <div class="flex justify-center items-center mt-12 widhtimg">
+          <img src={manmount.src} />
+        </div>
+      </div>
+    </div>
+
+    <div class="box2 flex justify-center items-center">
+      <div class="abc">
+        <div class="flex flex-row justify-center">
+          <div class="content text-center basis-3/4 sm:basis-1/3">
+            <h1 class="digitall">Design</h1>
+            <p class="repoeter">
+              Step into a realm where colors dance and play, Where data takes on
+              forms, in a whimsical display. Our artisans, skilled in the
+              language of design, Craft a symphony of visuals that truly shine
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="bluee">
+        <div class="bbb flex items-center justify-center">
+          <img src={news.src} class="imger" />
+        </div>
+      </div>
+    </div>
+
+    <div class="box1 flex justify-center items-center">
+      <div class="abc">
+        <div class="flex flex-row justify-center">
+          <div class="content text-center basis-3/4 sm:basis-1/3">
+            <h1 class="digitize">Digitize</h1>
+            <p class="reports">
+              From static to dynamic, reports come alive, A transformation that
+              makes them thrive. With enchanting interactivity, they enchant and
+              allure, Captivating audiences, experiences pure.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="green">
+        <div class="bbb flex items-center justify-center">
+          <img src={computer.src} class="img" />
+        </div>
+      </div>
+    </div>
+
+    <div class="box2 flex justify-center items-center">
+      <div class="abc">
+        <div class="flex flex-row justify-center">
+          <div class="content text-center basis-3/4 sm:basis-1/3">
+            <h1 class="digitall">Animate</h1>
+            <p class="repoeter">
+              A new dimension of interactivity we bring,  Engaging narratives,
+              like a song to sing. Memorable moments, easy to comprehend,  With
+              animation's magic, reports transcend.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="bluee">
+        <div class="bca flex items-center justify-center">
+          <img src={Animate.src} class="imger" />
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <div class="box1 flex justify-center items-center">
+        <div class="abc">
+          <div class="flex flex-row justify-center">
+            <div class="content text-center basis-3/4 sm:basis-1/3">
+              <h1 class="digitize">Report writing</h1>
+              <p class="reports">
+                Informative whispers, we weave with care, Speaking to your
+                market, a message rare. Standing out from the crowd, with words
+                that shine, Expertly written, a report so divine.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="green">
+          <div class="bbb flex items-center justify-center">
+            <div>
+              <img src={handdroup.src} class="imge" />
+
+              <div class="butt">
+                <img src={buttonf.src} class="imggs" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="panell flex justify-center items-end">
+        <h1 class="portfolio">Port &nbsp; olio</h1>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .center {
+    font-size: 100px;
+  }
+
+  .trigger {
+    width: 100vw;
+    height: 50vh;
+    background-color: lightgray;
+    padding: 20px;
+  }
+
+  .butt {
+    width: 68px;
+    position: absolute;
+    left: 168px;
+    bottom: -78px;
+  }
+  .portfolio {
+    color: #fff;
+    text-align: center;
+    font-family: "DM Serif Display";
+    font-size: 64px;
+    font-weight: 400;
+  }
+
+  .digitize {
+    color: #fff;
+    font-family: "DM Serif Display";
+    font-size: 64px;
+    font-weight: 400;
+    text-transform: capitalize;
+  }
+  .reports {
+    color: #fff;
+    font-family: "Open Sans";
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 30px;
+  }
+  .digitall {
+    color: black;
+    font-family: "DM Serif Display";
+    font-size: 64px;
+    font-weight: 400;
+    text-transform: capitalize;
+  }
+  .repoeter {
+    color: black;
+    font-family: "Open Sans";
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 30px;
+  }
+  .bringheads {
+    /* margin-top: 80px; */
+    color: #000;
+    text-align: center;
+    font-family: "DM Serif Display";
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 400;
+  }
+  .bringhead {
+    font-family: "DM Serif Display";
+    font-size: 64px;
+    font-weight: 400;
+    line-height: 88px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: white;
+    padding: 0px 0px 20px;
+  }
+  .content {
+    font-family: "Open Sans";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+  }
+  .pdng {
+    padding-top: 60px;
+    padding-bottom: 10px;
+  }
+  .abc {
+    position: absolute;
+    top: 50px;
+  }
+  .reportspan {
+    color: white;
+    font-family: "Open Sans";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21px;
+  }
+
+  .containnw {
+    /* height: 940px !important; */
+    /* overflow-y: scroll; */
+    background-color: #fcf4ed;
+  }
+
+  .panel {
+    scroll-snap-align: start;
+    background-color: #0047ab;
+    width: 100%;
+    height: 940px;
+  }
+  .panell {
+    scroll-snap-align: start;
+    background-color: #0047ab;
+    width: 100%;
+    height: 940px;
+  }
+
+  .box1 {
+    width: 100%;
+    height: 940px;
+    scroll-snap-align: start;
+    position: relative;
+  }
+  .box2 {
+    width: 100%;
+    height: 940px;
+    scroll-snap-align: start;
+    position: relative;
+  }
+  .boxes {
+    width: 100%;
+    height: 940px;
+    scroll-snap-align: start;
+    position: relative;
+  }
+
+  .green {
+    width: 100%;
+    height: 940px;
+    background-color: #0047ab;
+    border-radius: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .bluee {
+    width: 400px;
+    height: 400px;
+    background-color: #0047ab;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .bbb {
+    width: 420px;
+    height: 428px;
+    position: relative;
+  }
+  .bca {
+    /* width: 480px; */
+    height: 488px;
+    position: relative;
+  }
+
+  .img {
+    margin-top: 130px;
+    margin-left: 96px;
+  }
+  .imge {
+    margin-top: 100px;
+    position: relative;
+  }
+  .imger {
+    margin-top: 103px;
+    margin-left: -13px;
+  }
+
+  @media screen and (max-width: 1440px) {
+    .bringheads {
+      font-size: 60px;
+    }
+    .digitall {
+      font-size: 60px;
+    }
+    .digitize {
+      font-size: 60px;
+    }
+  }
+  @media screen and (max-width: 1200px) {
+    .bringheads {
+      font-size: 50px;
+    }
+    .digitall {
+      font-size: 50px;
+    }
+    .digitize {
+      font-size: 50px;
+    }
+    .repoeter {
+      font-size: 14px;
+    }
+    .reports {
+      font-size: 14px;
+    }
+    .portfolio {
+      font-size: 60px;
+    }
+  }
+  @media screen and (max-width: 1024px) {
+    .bringheads {
+      font-size: 45px;
+    }
+    .digitall {
+      font-size: 45px;
+    }
+    .digitize {
+      font-size: 45px;
+    }
+    .repoeter {
+      font-size: 13px;
+    }
+    .reports {
+      font-size: 13px;
+    }
+    .portfolio {
+      font-size: 54px;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .bringheads {
+      font-size: 38px;
+    }
+    .digitall {
+      font-size: 38px;
+    }
+    .digitize {
+      font-size: 38px;
+    }
+    .repoeter {
+      font-size: 13px;
+      margin-top: 16px;
+      /* line-height: 16px; */
+    }
+    .reports {
+      font-size: 13px;
+      margin-top: 16px;
+      /* line-height: 16px; */
+    }
+    .portfolio {
+      font-size: 34px;
+    }
+    .widhtimg {
+      width: 320px;
+    }
+    .widhtimg img,
+    .bbb img,
+    .imge img,
+    .imger img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .img {
+      margin-top: 130px;
+      margin-left: 70px;
+    }
+    .bca {
+      height:370px;
+      width: 370px;
+    }
+    .imger {
+      margin-top: 103px;
+      margin-left: 0px;
+    }
+    .bbb {
+      width: 320px;
+      height: 320px;
+      position: relative;
+    }
+    .bluee {
+      width: 250px;
+      height: 250px;
+    }
+
+    .butt {
+      width: 46px;
+      position: absolute;
+      left: 135px;
+      bottom: -80px;
+    }
+    .portfolio {
+      font-size: 48px;
+
+    margin-right: 5px;
+
+    }
+    .box1 {
+      height: 840px;
+    }
+    .box2 {
+      height: 840px;
+    }
+    .panell {
+      height: 840px;
+    }
+
+    .boxes {
+      height: 840px;
+    }
+
+    .green {
+      height: 840px;
+    }
+  }
+  @media screen and (max-width: 425px) {
+    .bringheads {
+      font-size: 34px;
+    }
+    .digitall {
+      font-size: 34px;
+    }
+    .digitize {
+      font-size: 34px;
+    }
+    .repoeter {
+      font-size: 12px;
+      margin-top: 16px;
+      line-height: 16px;
+    }
+    .reports {
+      font-size: 12px;
+      margin-top: 16px;
+      line-height: 16px;
+    }
+    .portfolio {
+      font-size: 34px;
+
+    margin-right: 0px;
+
+    }
+    .widhtimg {
+      width: 250px;
+    }
+    .widhtimg img,
+    .bbb img,
+    .imge img,
+    .imger img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .img {
+      margin-top: 130px;
+      margin-left: 70px;
+    }
+    .bca {
+      height: 252px;
+      width: 275px;
+    }
+    .imger {
+      margin-top: 103px;
+      margin-left: 0px;
+    }
+    .bbb {
+      width: 260px;
+      height: 282px;
+      position: relative;
+    }
+    .bluee {
+      width: 250px;
+      height: 250px;
+    }
+
+    .butt {
+      width: 36px;
+      position: absolute;
+      left: 112px;
+      bottom: -40px;
+    }
+    .box1 {
+      height: 640px;
+    }
+    .box2 {
+      height: 640px;
+    }
+    .panell {
+      height: 640px;
+    }
+
+    .boxes {
+      height: 640px;
+    }
+
+    .green {
+      height: 640px;
+    }
+  }
+  @media screen and (max-width: 375px) {
+    .bringheads {
+      font-size: 32px;
+    }
+    .digitall {
+      font-size: 32px;
+    }
+    .digitize {
+      font-size: 32px;
+    }
+    .repoeter {
+      font-size: 10px;
+      margin-top: 16px;
+      line-height: 16px;
+    }
+    .reports {
+      font-size: 10px;
+      margin-top: 16px;
+      line-height: 16px;
+    }
+    .portfolio {
+      font-size: 32px;
+
+    margin-right: 0px;
+
+    }
+    .widhtimg {
+      width: 240px;
+    }
+    .widhtimg img,
+    .bbb img,
+    .imge img,
+    .imger img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .img {
+      margin-top: 130px;
+      margin-left: 70px;
+    }
+    .bca {
+      height: 242px;
+      width: 242px;
+    }
+    .imger {
+      margin-top: 103px;
+      margin-left: 4px;
+    }
+    .bbb {
+      width: 240px;
+      height: 289px;
+      position: relative;
+    }
+    .bluee {
+      width: 250px;
+      height: 250px;
+    }
+
+    .butt {
+      width: 34px;
+      position: absolute;
+      left: 102px;
+      bottom: -30px;
+    }
+    .box1 {
+      height: 640px;
+    }
+    .box2 {
+      height: 640px;
+    }
+    .panell {
+      height: 640px;
+    }
+
+    .boxes {
+      height: 640px;
+    }
+
+    .green {
+      height: 640px;
+    }
+  }
+</style>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    gsap.registerPlugin(ScrollTrigger);
+
+    const box1Elements = document.querySelectorAll(".box1");
+
+    box1Elements.forEach((element, index) => {
+      const greenElement = element.querySelector(".green");
+      gsap.to(greenElement, {
+        top: "40%",
+        backgroundColor: "#0047ab", 
+        borderRadius: "100%",
+        duration: 2,
+        scrollTrigger: {
+          trigger: element,
+          start: "20px center",
+          end: "center bottom",
+          // markers:true,
+          scrub: 2,
+        },
+      });
+
+      const mm = gsap.matchMedia();
+
+      mm.add("(max-width: 375px)", () => {
+        gsap.to(greenElement, {
+          width: "250px",
+          height: "250px",
+          top: "40%",
+          backgroundColor: "#0047ab",
+          duration: 2,
+          borderRadius: "100%",
+          scrollTrigger: {
+            trigger: element,
+            start: "20px center",
+            end: "center bottom",
+            scrub: 2,
+          },
+        });
+      });
+
+      mm.add("(max-width: 425px)", () => {
+        gsap.to(greenElement, {
+          width: "260px",
+          height: "260px",
+          top: "40%",
+          backgroundColor: "#0047ab",
+          duration: 2,
+          borderRadius: "100%",
+          scrollTrigger: {
+            trigger: element,
+            start: "20px center",
+            end: "center bottom",
+            scrub: 2,
+          },
+        });
+      });
+      mm.add("(min-width: 426px)", () => {
+        gsap.to(greenElement, {
+          width: "350px",
+          height: "350px",
+          top: "40%",
+          backgroundColor: "#0047ab",
+          duration: 2,
+          borderRadius: "100%",
+          scrollTrigger: {
+            trigger: element,
+            start: "20px center",
+            end: "center bottom",
+            scrub: 2,
+          },
+        });
+      });
+
+      mm.add("(min-width: 769px)", () => {
+        gsap.to(greenElement, {
+          width: "400px",
+          height: "400px",
+          top: "40%",
+          backgroundColor: "#0047ab",
+          duration: 2,
+          borderRadius: "100%",
+          scrollTrigger: {
+            trigger: element,
+            start: "20px center",
+            end: "center bottom",
+            scrub: 2,
+          },
+        });
+      });
+
+      //---- Add text color change animation to each box -----//
+      const textElements = document.querySelectorAll(".digitize, .reports");
+
+      textElements.forEach((element) => {
+        gsap.to(element, {
+          color: "black",
+          scrollTrigger: {
+            trigger: element.closest(".box1"),
+            start: "20px center",
+            end: "center bottom",
+            scrub: 1,
+          },
+        });
+      });
+    });
+
+    //--------------------------box2 animation start---------------------------//
+
+    const box2Elements = document.querySelectorAll(".box2");
+
+    box2Elements.forEach((element, index) => {
+      const blueElement = element.querySelector(".bluee");
+      gsap.to(blueElement, {
+        width: "100%",
+        // height: "940px",
+
+        top: "40%",
+        backgroundColor: "#0047ab",
+        borderRadius: "0%",
+        duration: 2,
+        scrollTrigger: {
+          trigger: element,
+          start: "20px center",
+          end: "center bottom",
+          scrub: 2,
+        },
+      });
+
+      const mm = gsap.matchMedia();
+
+      mm.add("(max-width: 375px)", () => {
+        gsap.to(blueElement, {
+          width: "100%",
+          height: "640px",
+          top: "40%",
+          backgroundColor: "#0047ab",
+          borderRadius: "0%",
+          duration: 2,
+          scrollTrigger: {
+            trigger: element,
+            start: "20px center",
+            end: "center bottom",
+            scrub: 2,
+          },
+        });
+      });
+
+      mm.add("(max-width: 425px)", () => {
+        gsap.to(blueElement, {
+          width: "100%",
+          height: "640px",
+          top: "40%",
+          backgroundColor: "#0047ab",
+          borderRadius: "0%",
+          duration: 2,
+          scrollTrigger: {
+            trigger: element,
+            start: "20px center",
+            end: "center bottom",
+            scrub: 2,
+          },
+        });
+      });
+      mm.add("(min-width: 426px)", () => {
+        gsap.to(blueElement, {
+          width: "100%",
+          height: "850px",
+          top: "40%",
+          backgroundColor: "#0047ab",
+          borderRadius: "0%",
+          duration: 2,
+          scrollTrigger: {
+            trigger: element,
+            start: "20px center",
+            end: "center bottom",
+            scrub: 2,
+          },
+        });
+      });
+
+      mm.add("(min-width: 769px)", () => {
+        gsap.to(blueElement, {
+          width: "100%",
+          height: "940px",
+          top: "40%",
+          backgroundColor: "#0047ab",
+          borderRadius: "0%",
+          duration: 2,
+          scrollTrigger: {
+            trigger: element,
+            start: "20px center",
+            end: "center bottom",
+            scrub: 2,
+          },
+        });
+      });
+
+      const textElements = document.querySelectorAll(".digitall, .repoeter");
+
+      textElements.forEach((element) => {
+        gsap.to(element, {
+          color: "white",
+          scrollTrigger: {
+            trigger: element.closest(".box2"),
+            start: "20px center",
+            end: "center bottom",
+            scrub: 2,
+          },
+        });
+      });
+    });
+    //--------------------------box2 animation end---------------------------//
+
+    // --------------drop button animation start------------------//
+
+    const buttonf = gsap.timeline({
+      scrollTrigger: {
+        trigger: ".butt",
+        start: "center center",
+        endTrigger: ".portfolio",
+        end: "center center",
+        scrub: 1,
+        pin: true,
+        // markers: true,
+      },
+    });
+
+    buttonf.to(".butt", {
+      duration: 1,
+      ease: "bounce.out",
+      xPercent: 8,
+      rotate: 12,
+    });
+  });
+
+  // --------------drop button animation end------------------//
+</script> 

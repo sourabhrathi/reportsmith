@@ -1,0 +1,95 @@
+---
+import design from "../images/design.png";
+import "../styles/global.css";
+---
+
+<section class="bringreport">
+    <div class="container mx-auto py-10">
+        <div>
+            <div>
+                <h1 class="bringhead">Design</h1>
+                <div class="flex flex-row justify-center">
+                    <div
+                        class="content text-center basis-3/4 lg:basis-1/3 md:basis-2/4 sm:basis-3/4"
+                    >
+                        <span class="reportspan">
+                            Step into a realm where colors dance and play, Where
+                            data takes on forms, in a whimsical display. Our
+                            artisans, skilled in the language of design, Craft a
+                            symphony of visuals that truly shine
+                        </span>
+                    </div>
+                </div>
+                <div class="flex items-center justify-center pdng">
+                    <img src={design.src} alt="" />
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+    .bringreport {
+        background: #fcf4ed;
+    }
+    .bringhead {
+        font-family: "DM Serif Display";
+        font-size: 64px;
+        font-weight: 400;
+        line-height: 88px;
+        letter-spacing: 0em;
+        text-align: center;
+        margin-top: 80px;
+        padding: 0px 0px 20px;
+    }
+
+    .content {
+        font-family: "Open Sans";
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 26px;
+    }
+    .pdng {
+        padding-top: 60px;
+        padding-bottom: 10px;
+    }
+    .reportspan {
+        color: #212121;
+        font-family: "Open Sans";
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 21px;
+    }
+
+@media screen and (max-width: 1024px){
+    .bringhead{
+    font-size: 48px;
+    }
+    .reportspan {
+        font-size: 13px;
+
+    }
+    .pdng img{
+        width:405px;
+    }
+}
+
+@media screen and (max-width:425px) {
+    .bringhead {
+        font-size: 35px;
+        padding: 0px 0px 10px;
+    }
+    .reportspan{
+    font-size: 11px;
+}
+.content {
+    line-height: 21px;
+}
+.pdng{
+    padding-top: 37px;
+}
+.pdng img{
+        width:300px;
+    }
+}
+</style>

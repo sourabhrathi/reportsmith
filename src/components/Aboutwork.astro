@@ -1,0 +1,282 @@
+---
+import logo from "../images/working.png";
+import "../styles/global.css";
+---
+
+<section class="whyusmain">
+    <div class="container mx-auto contain">
+        <div>
+            <div><h1 class="bringhead">Portfolio</h1></div>
+        </div>
+        <div class="container mx-auto pb-3">
+            <div class="flex items-center justify-center space-x-4 sm:space-x-4  md:space-x-8 lg:space-x-10 mb-6">
+                <div class="tabbar">All</div>
+                <div class="tabbar">Design</div>
+                <div class="tabbar">Digitize</div>
+                <div class="tabbar">Animate</div>
+                <div class="tabbar">Report Writing</div>
+            </div>
+        </div>
+        <div class=" lg:flex md:flex justify-center md:justify-between items-center flex-col sm:flex-row">
+            <div class=" w-full sm:w-full md:w-80 lg:w-2/3 text-center">
+                <div class="flex justify-center">
+                    <div class="workimg">
+                        <div class="imagelogo">
+                            <img src={logo.src} alt="" class="imge" />
+                        </div>
+                    </div>
+                </div>
+
+                <p class="head">Circular Economy</p>
+                <span class="para"
+                    >Report Design .<span class="para">Cover Design</span></span >
+            </div>
+            <div class=" w-full sm:w-full md:w-80  lg:w-2/3 text-center topmarn"  >
+                <div class="flex justify-center  items-center">
+                    <div class="workimg">
+                        <div class="imagelogo">
+                            <img src={logo.src} alt="" class="imge" />
+                        </div>
+                    </div>
+                </div>
+                <p class="head">Aragen Life Sciences Pvt. Ltd.</p>
+                <span class="para"
+                    >Report Design .<span class="para">Cover Design</span></span
+                >
+            </div>
+        </div>
+
+        <div class="lg:flex md:flex justify-center md:justify-between items-center flex-col sm:flex-row my-12">
+            <div class=" w-full sm:w-full md:w-80 lg:w-1/2 text-center">
+                <div class="flex justify-center">
+                    <div class="workimg">
+                        <div class="imagelogo">
+                            <img src={logo.src} alt="" class="imge" />
+                        </div>
+                    </div>
+                </div>
+
+                <p class="head">Circular Economy</p>
+                <span class="para"
+                    >Report Design .<span class="para">Cover Design</span></span
+                >
+            </div>
+            <div class=" w-full sm:w-full md:w-80 lg:w-1/2 text-center topmarn">
+                <div class="flex justify-center items-center">
+                    <div class="workimg">
+                        <div class="imagelogo">
+                            <img src={logo.src} alt="" class="imge" />
+                        </div>
+                    </div>
+                </div>
+                <p class="head">Aragen Life Sciences Pvt. Ltd.</p>
+                <span class="para"
+                    >Report Design .<span class="para">Cover Design</span></span
+                >
+            </div>
+        </div>
+
+        <div class="lg:flex md:flex justify-center md:justify-between items-center flex-col sm:flex-row my-12">
+            <div class=" w-full sm:w-full md:w-80 lg:w-1/2 text-center">
+                <div class="flex justify-center">
+                    <div class="workimg">
+                        <div class="imagelogo">
+                            <img src={logo.src} alt="" class="imge" />
+                        </div>
+                    </div>
+                </div>
+
+                <p class="head">Circular Economy</p>
+                <span class="para"
+                    >Report Design .<span class="para">Cover Design</span></span
+                >
+            </div>
+            <div class=" w-full sm:w-full md:w-80 lg:w-1/2 text-center topmarn">
+                <div class="flex justify-center items-center">
+                    <div class="workimg">
+                        <div class="imagelogo">
+                            <img src={logo.src} alt="" class="imge" />
+                        </div>
+                    </div>
+                </div>
+                <p class="head">Aragen Life Sciences Pvt. Ltd.</p>
+                <span class="para"
+                    >Report Design .<span class="para">Cover Design</span></span
+                >
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+    .contain {
+        /* padding-top:3rem ; */
+        padding-bottom: 20px;
+    }
+    .whyusmain {
+        background: #fcf4ed;
+    }
+    .workimg {
+        width: 500px;
+        border-radius: 50%;
+        background: #fff;
+        /* transition: 0.3s ease-in-out;  */
+        display: flex;
+        justify-content: center;
+    }
+    .imagelogo {
+        padding-left: 18px;
+    }
+    /* .workimg:hover{
+        border-radius: 50px;
+  
+    }
+    .workimg img{
+        transition: 0.5s ease-in-out; 
+    }
+    .workimg img:hover{
+        transform: rotate(4deg);
+    } */
+    .bringhead {
+        font-family: "DM Serif Display";
+        font-size: 64px;
+        font-weight: 400;
+        line-height: 88px;
+        letter-spacing: 0em;
+        text-align: center;
+        margin-top: 80px;
+        padding-top: 30px;
+        padding-bottom: 15px;
+        color: #000;
+    }
+    .circular {
+        color: #000;
+        text-align: center;
+        font-family: "DM Serif Display";
+        font-size: 32px;
+        font-weight: 400;
+    }
+    .head {
+        color: #000;
+        font-family: "DM Serif Display";
+        font-size: 32px;
+        font-weight: 400;
+        padding-top: 20px;
+    }
+    .para {
+        color: #000;
+        font-family: "Open Sans";
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 26px;
+    }
+    .tabbar {
+        color: #000;
+        font-family: "Open Sans";
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 26px;
+        /* margin-bottom: 30px;  */
+        cursor: pointer;
+    }
+@media screen and (max-width:1440px){
+    .bringhead {
+    font-size: 60px;
+    }
+    .tabbar {
+    font-size: 15px;
+}
+.head {
+    font-size: 30px;
+}
+.para{
+    font-size: 15px;
+}
+}
+@media screen and (max-width:1279px){
+    .workimg {
+    width: 450px;
+}
+.bringhead {
+    font-size: 55px;
+}
+.head{
+    font-size: 26px;
+}
+.para {
+    font-size: 13px;
+}
+}
+
+@media screen and (max-width:1024px) {
+    .head{
+    font-size: 19px;
+}
+.para {
+    font-size: 12px;
+}
+.bringhead {
+    font-size: 52px;
+}
+.tabbar{
+    font-size: 14px;
+}
+
+}
+@media screen and (max-width:767px){
+    .topmarn{
+        margin-top: 20px;
+    }
+    .workimg {
+    width: 430px;
+}
+}
+
+@media screen and (max-width:425px){
+    .tabbar {
+    font-size: 13px;
+}
+.bringhead {
+    font-size: 35px;
+}
+
+.para {
+    font-size: 11px;
+}
+
+.head {
+    font-size: 17px;
+}
+.workimg {
+    width: 340px;
+}
+}
+
+</style>
+
+<script>
+    gsap.registerPlugin(ScrollTrigger);
+
+    const box1Elements = document.querySelectorAll(".workimg");
+
+    box1Elements.forEach((element, index) => {
+        const tl = gsap.timeline({
+            defaults: { duration: 0.4, ease: "ease-in-out" },
+            paused: true,
+        });
+
+        tl.to(element.querySelector(".imge"), {
+            rotation: 4,
+        });
+
+        element.addEventListener("mouseenter", () => {
+            tl.play();
+            gsap.to(element, { borderRadius: "50px", duration: 0.4 });
+        });
+
+        element.addEventListener("mouseleave", () => {
+            tl.reverse();
+            gsap.to(element, { borderRadius: "50%", duration: 0.4 });
+        });
+    });
+</script>

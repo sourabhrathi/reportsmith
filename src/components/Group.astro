@@ -1,0 +1,41 @@
+---
+import Groupimg from "../images/Groupimg.png";
+
+import "../styles/global.css";
+---
+
+<section class="bringreport">
+    <div class="container mx-auto">
+            <div class=" flex justify-center">
+                <div class="columns-1   imgwidth">
+                 <img src={Groupimg.src} alt="">
+                </div>
+            </div>
+    </div>
+   
+</section>
+
+<style>
+
+.bringreport {
+        background: #fcf4ed;
+        padding: 160px 0px;
+    }
+
+    @media screen and (max-width:768px){
+    .bringreport{
+    padding: 120px 0px;
+}
+}
+
+@media screen and (max-width:425px){
+    .bringreport{
+    padding: 100px 0px;
+}
+.imgwidth{
+    width: 320px;
+}
+}
+
+
+</style>

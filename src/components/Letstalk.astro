@@ -1,0 +1,334 @@
+---
+import logo from "../images/talk1.png";
+import logo1 from "../images/talk2.png";
+import "../styles/global.css";
+---
+
+<section class="lesttalk">
+    <div class="container mx-auto">
+        <div class="sm:py-10 py-6">
+        <div class="flex flex-row">
+            <div class="w-full">
+                <h2 class="talkhaed">Let’s Talk</h2>
+            </div>
+        </div>
+        <div class="flex flex-row justify-center align-middle lets">
+            <div class="columns-1  md:w-10/12 sm:w-11/12 talkform letstalkform">
+                <div class="talkimgwidth talkimg"><img src={logo.src} alt=""  /></div>
+                
+                <form action="" class="">
+                    <div class="higher">
+                        <span class="talksdesc">Hello! My name is</span>
+                        <input type="text" name="" id="" class="talkinput" />
+                        <span class="talksdesc"
+                            >and I want to discuss a potential project.</span
+                        >
+                    </div>
+                    <div class="pt-2 sm:pt-3 higher">
+                        <span class="talksdesc">You can email me at</span>
+                        <input type="text" name="" id="" class="talkinput" />
+                        <span class="talksdesc">& reach me on</span>
+                        <input
+                            type="text"
+                            name=""
+                            id=""
+                            class="talkinput"
+                        />.
+                    </div>
+                    <div class="pt-2 sm:pt-3 higher">
+                        <p class="talksdesc">
+                            Here are some details about my project:
+                        </p>
+                        <!-- <textarea
+                            name="message"
+                            placeholder="Message"
+                            rows="4"
+                            class="w-full mb-2 px-4 py-2 mt-2 outline-none border"
+                            required=""></textarea> -->
+                        <input
+                            type="text"
+                            name=""
+                            id=""
+                            class="outline-none w-full talktexarea"
+                        />
+                    </div>
+                    <div class="pt-2 sm:pt-3 higher">
+                        <p class="talksdesc">
+                            I'm interested in (select one or more):
+                        </p>
+                        <div class="pt-3">
+                            <button class="talkbtns">Category</button>
+                            <button class="talkbtns">Category</button>
+                            <button class="talkbtns">Category</button>
+                            <button class="talkbtns">Category</button>
+                        </div>
+                    </div>
+                    <div class="flex justify-center align-middle bottombtn pt-20">
+                        <button class="talkbtn">Submit Request</button>
+                    </div>
+                </form>
+                <div class="talkimgwidth talkimg2">
+                <img src={logo1.src} alt=""  />
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+
+<style>
+    .lets{
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .lesttalk {
+        background: #0047ab;
+    }
+
+    .talkhaed {
+        font-family: 'DM Serif Display';
+        font-size: 64px;
+        font-weight: 400;
+        line-height: 88px;
+        letter-spacing: 0em;
+        text-align: center;
+        color: #fcf4ed;
+    }
+
+    .talkform {
+        background-color: #fff;
+        padding: 30px;
+        border-radius: 10px;
+    }
+
+    .talksdesc {
+        font-family: 'Open Sans';
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 27px;
+        letter-spacing: 0em;
+        text-align: left;
+    }
+
+    .talkinput {
+        border-bottom: 1px solid #000;
+        outline: none;
+    }
+
+    .talktexarea {
+        border-bottom: 1px solid #000;
+    }
+
+    .talkbtns {
+        font-family: 'Open Sans';
+        border: 1px solid #000;
+        padding: 10px 18px;
+        border-radius: 5px;
+        margin-right: 10px;
+       
+    }
+
+    .talkbtn {
+        font-family: 'Open Sans';
+        border: 1px solid #000;
+        padding: 10px 18px;
+        border-radius: 5px;
+        background: #0047ab;
+        color: #fff;
+    }
+
+    .letstalkform {
+        position: relative;
+    }
+
+    .talkimg {
+        position: absolute;
+        bottom: 0;
+        left: -106px;
+        right: 0;
+    }
+
+    .talkimg2 {
+        position: absolute;
+        right: -94px;
+        bottom: 0;
+    }
+
+    .talkimgwidth{
+        width: 180px;
+    }
+
+
+@media screen  and (max-width:1024px){
+    .talkhaed {
+    font-size: 52px;
+    }
+    .talksdesc {
+    font-size: 17px;
+    }
+    .talkform {
+    padding: 24px;
+    }
+    .talkbtns {
+    padding: 9px 17px;
+    font-size: 15px;
+    }
+    .talkbtn {
+    padding: 9px 17px;
+    }
+    .bottombtn{
+        padding-top: 4rem !important;
+    }
+    .lets {
+    padding-left: 20px;
+    }
+}
+@media screen and (max-width:1023px){
+    .lets {
+    padding-left: 0px;
+    } 
+}
+@media screen and (max-width:840px){
+    .talkimgwidth{
+    width: 150px;
+}
+.talkimg{
+    position: absolute;
+    bottom: 0;
+    left: -90px;
+    right: 0;
+}
+.talkimg2 {
+    position: absolute;
+    right: -80px;
+    bottom: 0;
+}
+}
+    @media screen and (max-width:786px) {
+    .talkimg {
+    position: absolute;
+    bottom: 0;
+    left: 0px;
+    rotate: -90deg;
+    right: 0;
+    bottom: -72px;
+}
+    
+    .talkimg2 {
+    position: absolute;
+    right: 0px;
+    rotate: 90deg;
+    bottom: -67px;
+}
+.talkimgwidth {
+    width: 150px;
+}
+
+
+.container{
+        padding-bottom: 130px;
+    }
+    .talkhaed {
+    font-size: 45px;
+}
+.talksdesc {
+    font-size: 16px;
+}
+
+
+
+    }
+    @media screen and (max-width:522px){
+        .talkhaed {
+    font-size: 42px;
+}
+.talksdesc{
+    font-size: 15px;
+}
+.talkbtns {
+    padding: 8px 13px;
+    font-size: 12px;
+}
+.talkimgwidth {
+    width: 140px;
+}
+.talkimg {
+    position: absolute;
+    bottom: 0;
+    left: -15px;
+    rotate: -91deg;
+    right: 0;
+    bottom: -68px;
+}
+.talkimg2 {
+    position: absolute;
+    right: 0px;
+    rotate: 90deg;
+    bottom: -63px;
+}
+.talkbtn {
+    padding: 7px 13px;
+}
+.higher{
+    line-height: normal;
+}
+
+    }
+
+
+    @media screen and (max-width:425px){
+
+.talkhaed{
+    font-size: 32px;
+}
+.talkform {
+    padding: 17px;
+}
+.talksdesc{
+    font-size: 10px;
+}
+.talkbtns {
+    padding: 5px 10px;
+    font-size: 10px;
+    margin-right: 12px;
+}
+.bottombtn{
+    padding-top: 20px !important;
+}
+.talkimgwidth {
+    width: 110px;
+}
+.talkimg2{
+    rotate: 90deg;
+    bottom: -46px;
+}
+.talkimg {
+    left: -8px;
+    rotate: -90deg;
+    bottom: -52px;
+}
+.talkbtn {
+    padding: 9px 6px;
+    font-size: 11px;
+}
+.container{
+    padding-bottom: 90px;
+}
+
+  }
+
+  @media screen and (max-width:375px) {
+    .lets {
+    padding-left: 0px;
+}
+.talkbtns {
+    padding: 5px 10px;
+    font-size: 10px;
+    margin-right: 6px;
+}
+.lets {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+  }
+</style>

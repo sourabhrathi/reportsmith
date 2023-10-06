@@ -1,0 +1,59 @@
+---
+
+---
+<!-- <section style="background: #FCF4ED;">
+    <div class="container mx-auto">
+<div style="background: #Fff; height: 100vh;"></div>
+    </div>
+</section> -->
+
+
+<div class="container mx-auto" >
+    <section    class="one ">
+        <h1>First page</h1>
+    </section>
+    <section class="two">
+        <h1>Second page</h1>
+    </section>
+    <section class="three ">
+        <h1>Third page</h1>
+    </section>
+    <section class="four ">
+        <h1>Fourth page</h1>
+    </section>
+</div>
+
+<style>
+
+.container{
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100vh;
+}
+
+        section{
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        scroll-snap-align: start;
+    }
+
+    .one{
+        background: rgb(36, 164, 138);
+    }
+
+    .two{
+        background: rgb(211, 79, 79);
+    }
+
+    .three{
+        background: rgb(67, 91, 175);
+    }
+
+    .four{
+        background: lightsalmon;
+    }
+
+</style>

@@ -1,0 +1,90 @@
+---
+import play from "../images/playcircle.png";
+import "../styles/global.css";
+---
+
+<section class="bringreport">
+    <div class="container mx-auto">
+        <div class="py-10">
+            <div><h1 class="bringhead">Bring your Reports to Life</h1></div>
+            <div class="videobring">
+                <div class="playsize"><img src={play.src} alt="" /></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+    .playsize {
+        width: 100px;
+        height: auto;
+    }
+
+    .bringreport {
+        background: #fcf4ed;
+    }
+
+    .bringhead {
+        font-family: "DM Serif Display";
+        font-size: 64px;
+        font-weight: 550;
+        line-height: 88px;
+        letter-spacing: 0em;
+        text-align: center;
+        margin-top: 10px;
+        padding: 30px 0px;
+    }
+
+    .videobring {
+        background: #fff;
+        height: 70vh;
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    @media screen and (max-width: 1440px) {
+        .bringhead {
+            font-size: 60px;
+        }
+    }
+    @media screen and (max-width: 1200px) {
+        .bringhead {
+            font-size: 50px;
+        }
+    }
+
+    @media screen and (max-width: 1024px) {
+        .bringhead {
+            font-size: 45px;
+        }
+    }
+    @media screen and (max-width: 768px) {
+        .bringhead {
+            font-size: 38px;
+            line-height: 45px;
+        }
+    }
+    @media screen and (max-width: 473px) {
+        .playsize {
+            width: 70px;
+        }
+        .bringhead {
+            font-size: 35px;
+            padding: 20px 0px;
+            line-height: 40px;
+            margin-top: 30px;
+        }
+    }
+    @media screen and (max-width: 375px) {
+        .playsize {
+            width: 70px;
+        }
+        .bringhead {
+            font-size: 32px;
+            padding: 20px 0px;
+            line-height: 40px;
+            margin-top: 30px;
+        }
+    }
+</style>

@@ -1,0 +1,222 @@
+---
+import logo from "../images/Portfolios.png";
+import "../styles/global.css";
+---
+
+<section class="portsmith">
+    <div class="container mx-auto">
+        <div
+            class="lg:flex md:flex justify-center items-center flex-col sm:flex-row py-10"
+        >
+            <div
+                class="w-full sm:w-full md:w-1/2 lg:w-1/2 portimg flex justify-center"
+            >
+                <div class="imagewidth">
+                    <img src={logo.src} alt="" />
+                </div>
+            </div>
+            <div class="w-full sm:w-full md:w-1/2 lg:w-1/2">
+                <div>
+                    <h2 class="portsmithhead">Consectetur Purus</h2>
+                    <p class="prosmithdesc">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore
+                        magna aliqua. Ac turpis egestas integer eget aliquet
+                        nibh. Sed adipiscing diam donec adipiscing tristique
+                        risus. Vulputate sapien nec sagittis aliquam malesuada
+                        bibendum arcu vitae. Elit sed vulputate mi sit amet
+                        mauris commodo. Gravida rutrum quisque non tellus orci
+                        ac .
+                    </p>
+                </div>
+                <div class="report_port">
+                    <a href="/">
+                        <button type="button" class="portsmith_btn"
+                            >View Portfolio</button
+                        ></a
+                    >
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+    .portimg {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 50px 0px;
+    }
+
+    .portsmithhead {
+        font-family: "DM Serif Display";
+        font-size: 48px;
+        font-weight: 400;
+        line-height: 66px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: #fff;
+    }
+
+    .portsmith {
+        background: #0047ab;
+    }
+
+    .imagewidth {
+        width: 500px;
+    }
+
+    .prosmithdesc {
+        font-family: "Open Sans";
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 26px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: #f5f5f5;
+    }
+
+    .report_port {
+        display: inline-block;
+        margin-top: 20px;
+        border-radius: 10px;
+    }
+
+    .portsmith_btn {
+        font-family: "Open Sans";
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 22px;
+        letter-spacing: 0em;
+        text-align: left;
+        background-color: #fff !important;
+        padding: 10px 18px;
+        border-radius: 8px;
+        color: #0047ab;
+    }
+    @media screen and (max-width: 1400px) {
+        .portimg {
+            padding: 40px 80px;
+        }
+        .portsmithhead {
+            font-size: 45px;
+        }
+        .prosmithdesc {
+            font-size: 15px;
+        }
+    }
+    @media screen and (max-width: 1279px) {
+        .portimg {
+            padding: 50px 48px;
+        }
+        .portsmithhead {
+            font-size: 40px;
+        }
+        .prosmithdesc {
+            font-size: 14px;
+        }
+        .portsmith_btn {
+            font-size: 15px;
+        }
+    }
+    @media screen and (max-width: 1024px) {
+        .portimg {
+            padding: 50px 48px;
+        }
+        .portsmithhead {
+            font-size: 40px;
+        }
+        .prosmithdesc {
+            font-size: 14px;
+        }
+        .portsmith_btn {
+            font-size: 15px;
+        }
+    }
+    @media screen and (max-width: 1024px) {
+        .portimg {
+            padding: 40px 25px;
+        }
+        .portsmith_btn {
+            padding: 9px 16px;
+        }
+    }
+    @media screen and (max-width: 767px) {
+        .portsmithhead {
+            font-size: 40px;
+        }
+        .prosmithdesc {
+            font-size: 14px;
+        }
+        .imagewidth {
+            width: 400px;
+        }
+        .portimg {
+            justify-content: center;
+        }
+        .portsmith_btn {
+            font-size: 15px;
+            padding: 10px 16px;
+        }
+        .portimg {
+            padding: 40px 30px;
+        }
+    }
+
+    @media screen and (max-width: 425px) {
+        .portsmithhead {
+            font-size: 35px;
+        }
+        .prosmithdesc {
+            font-size: 12px;
+        }
+        .imagewidth {
+            width: 350px;
+        }
+        .portimg {
+            justify-content: center;
+        }
+        .portsmith_btn {
+            font-size: 13px;
+            padding: 9px 14px;
+        }
+        .portimg {
+            padding: 40px 40px;
+        }
+        .report_port {
+            display: flex;
+            justify-content: center;
+        }
+    }
+    @media screen and (max-width: 375px) {
+        .portsmithhead {
+            font-size: 22px;
+            text-align: center;
+            line-height: 30px;
+        }
+        .prosmithdesc {
+            font-size: 10px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 16px;
+        }
+        .imagewidth {
+            width: 350px;
+        }
+        .portimg {
+            justify-content: center;
+        }
+        .portsmith_btn {
+            font-size: 12px;
+            padding: 9px 14px;
+        }
+        .portimg {
+            padding: 40px 40px;
+        }
+        .report_port {
+            display: flex;
+            justify-content: center;
+        }
+    }
+</style>

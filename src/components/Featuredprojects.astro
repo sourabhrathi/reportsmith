@@ -1,0 +1,188 @@
+---
+import git1 from "../images/git1.png";
+import git2 from "../images/git2.png";
+
+import "../styles/global.css";
+---
+
+<section class="bringreport">
+  <div class="container mx-auto ">
+    <div class="flex flex-row py-10">
+      <div class="w-full">
+        <div>
+          <h2 class="headclient">Featured Projects</h2>
+        </div>
+
+        <div
+          class="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-2 gap-5 pt-14 flex justify-center pding"
+        >
+          <div>
+            <div class="flex justify-center">
+              <div class="flex justify-center items-center workimg">
+                <!-- <img src={git1.src}  /> -->
+              </div>
+            </div>
+            <span class="flex justify-center Consectetur"
+              >Consectetur purus</span
+            >
+          </div>
+
+          <div>
+            <div class="flex justify-center">
+              <div class="flex justify-center items-center workimg">
+                <!-- <img src={git1.src}  /> -->
+              </div>
+            </div>
+            <span class="flex justify-center Consectetur"
+              >Consectetur purus</span
+            >
+          </div>
+
+          <div>
+            <div class="flex justify-center">
+              <div class="flex justify-center items-center workimg">
+                <!-- <img src={git1.src}  /> -->
+              </div>
+            </div>
+            <span class="flex justify-center Consectetur"
+              >Consectetur purus</span
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  /* .mail {
+        width: calc(100% - 100px);
+    } */
+  .workimg {
+    width: 357px;
+    height: 357px;
+    border-radius: 50%;
+    background: #fff;
+  }
+
+  .bringreport {
+    background: #fcf4ed;
+  }
+  .Consectetur {
+    padding: 30px 0px 10px;
+    color: #000;
+    text-align: center;
+    font-family: " DM Serif Display";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 550;
+    line-height: normal;
+    text-transform: capitalize;
+  }
+  .featimg {
+    width: 100px;
+    /* height: 100px; */
+  }
+  .maildesc {
+    color: #212121;
+    font-family: "Open Sans";
+    font-size: 12px;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  .headclient {
+    font-family: "DM Serif Display";
+    font-size: 64px;
+    font-weight: 400;
+    line-height: 88px;
+    letter-spacing: 0em;
+    text-align: center;
+  }
+
+  .widthForContentAll {
+    width: calc(100% - 50px);
+  }
+
+  .featimg {
+    /* width: 50px !important;
+  height: 50px; */
+  }
+
+  .mailadd {
+    color: #000;
+    font-family: "DM Serif Display";
+    font-size: 20px;
+    font-weight: 400;
+  }
+
+  .FEATURES {
+    color: #fedd00;
+    font-size: 36px;
+    font-family: var(--EVERETT-REGULAR);
+    font-weight: 700;
+    line-height: 43px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+
+  .featurehove {
+    background-color: #ebebeb;
+    cursor: pointer;
+  }
+  .featurehove p {
+    width: 260px;
+    font-family: "Montserrat";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+  .featurehove:hover {
+    background-color: #4616cb;
+    color: white;
+    transition: 0.5s;
+  }
+
+  .featurehove {
+    height: 155px;
+  }
+
+  .featimgcol {
+    margin-right: 70px;
+  }
+  @media screen and (max-width: 1200px) {
+    .headclient {
+    font-size: 45px;
+}
+.Consectetur{
+    font-size: 25px;
+}
+
+  }
+  @media screen and (max-width:768px){
+    .headclient {
+    font-size: 38px;
+}
+.Consectetur{
+    font-size: 22px;
+}
+
+  }
+  @media screen and (max-width: 425px) {
+    .headclient {
+      font-size: 35px;
+    }
+    .pding{
+      padding-top: 2rem;
+    }
+    .Consectetur {
+    font-size: 20px;
+    }
+    .workimg{
+    width: 340px;
+    height: 340px;
+    }
+  }
+</style>

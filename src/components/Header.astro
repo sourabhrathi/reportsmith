@@ -1,0 +1,390 @@
+---
+import logo from "../images/Web_logo.png";
+import hambergermenu from "../images/hambergermenu.png";
+---
+
+<header id="menu_background">
+    <a href="/" class="logo"><img src={logo.src} alt="Report Smith" /></a>
+    <div class="hamber toggle">
+        <img src={hambergermenu.src} alt="" class="hammer" />
+    </div>
+
+    <div class="navigation">
+        <div>
+            <ul class="menu">
+                <li class="menu-item">
+                    <a class="sub-btn" href="#">Services</a>
+                    <ul class="sub-menu">
+                        <li class="sub-item">
+                            <a href="/servicedesign">Design</a>
+                        </li>
+                        <li class="sub-item"><a href="/">Digitize</a></li>
+                        <li class="sub-item"><a href="/">Animate</a></li>
+                        <li class="sub-item"><a href="/">Report Writing</a></li>
+                    </ul>
+                </li>
+                <li class="menu-item">
+                    <a href="/about" class="itemline">About</a>
+                </li>
+                <li class="menu-item">
+                    <a href="/aboutwork" class="itemline">Works</a>
+                </li>
+                <!-- <li class="menu-item">
+                    <a href="/" class="itemline">Careers</a>
+                </li> -->
+                <div class="report_contact menu-item">
+                    <button type="button" id="conatct"
+                        ><span class="report_cont"
+                            ><a href="/contact">Contact Us</a></span
+                        >
+                    </button>
+                </div>
+            </ul>
+        </div>
+    </div>
+</header>
+
+<style>
+    .playsize {
+        width: 100px;
+        height: auto;
+    }
+
+    .videobring {
+        background: #fff;
+        height: 70vh;
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .bringhead {
+        font-family: "DM Serif Display";
+        font-size: 64px;
+        font-weight: 550;
+        line-height: 88px;
+        letter-spacing: 0em;
+        text-align: center;
+        margin-top: 80px;
+        padding: 30px 0px;
+    }
+
+    .bringreport {
+        background: #fcf4ed;
+        height: calc(100vh - 80px);
+    }
+
+    .report_contact {
+        padding-left: 25px;
+    }
+
+    .report_cont {
+        background: #0047ab;
+        padding: 10px 18px;
+        color: #fff;
+        border-radius: 5px;
+        font-family: "Open Sans";
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 22px;
+        letter-spacing: 0em;
+        text-align: left;
+    }
+
+    .mmenu-item_serve {
+        position: relative;
+    }
+
+    .dropserve {
+        position: absolute;
+    }
+
+    .floatimg {
+        position: fixed;
+        right: 60px;
+        bottom: 60px;
+        width: 35px;
+    }
+
+    header {
+        z-index: 999;
+        position: fixed;
+        top: 0;
+        height: 80px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: #fcf4ed;
+        padding: 0 180px;
+    }
+
+    header .logo {
+        width: 150px;
+    }
+
+    header .navigation {
+        display: flex;
+        align-items: center;
+        line-height: 75px;
+    }
+
+    header .navigation .menu {
+        display: flex;
+        justify-content: center;
+        list-style: none;
+        user-select: none;
+        padding: 0px;
+    }
+
+    .menu-item {
+        padding: 0px 25px;
+    }
+
+    .menu-item > a {
+        color: #000;
+        font-size: 1rem;
+        text-decoration: none;
+        font-family: "DM Serif Display";
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 27px;
+        letter-spacing: 0em;
+        text-align: left;
+    }
+
+    .sub-item > a {
+        color: #000;
+        font-size: 1rem;
+        text-decoration: none;
+        margin: 0px 25px;
+        font-family: "DM Serif Display";
+    }
+
+    .menu-item .sub-menu {
+        position: absolute;
+        background: #fcf4ed;
+        top: 76px;
+        line-height: 40px;
+        list-style: none;
+        border-radius: 0 0 8px 8px;
+        box-shadow: 0 5px 25px rgb(0 0 0 / 20%);
+        pointer-events: none;
+        transform: translateY(20px);
+        opacity: 0;
+        transition: 0.3s;
+        transition-property: transform, opacity;
+    }
+
+    .menu-item:hover .sub-menu {
+        pointer-events: all;
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    .menu-item .sub-menu .sub-item {
+        position: relative;
+        padding: 7px 0;
+        box-shadow: inset 0px -30px 5px -30px rgba(255, 255, 255, 0.2);
+    }
+
+    .menu-item .sub-menu .sub-item a {
+        color: #000;
+        font-size: 1em;
+        text-decoration: none;
+        padding: 0px 0px;
+    }
+
+    .menu-item .sub-menu .sub-item a:hover {
+        color: #469dff;
+    }
+
+    .menu-item .sub-menu .sub-item:last-child:hover {
+        border-radius: 0 0 8px 8px;
+    }
+
+    .more .more-menu {
+        position: absolute;
+        background: #23252b;
+        list-style: none;
+        top: 0;
+        left: 100%;
+        white-space: nowrap;
+        border-radius: 0 8px 8px 8px;
+        overflow: hidden;
+        pointer-events: none;
+        transform: translateY(20px);
+        opacity: 0;
+        transition: 0.3s;
+        transition-property: transform, opacity;
+    }
+
+    .more:hover .more-menu {
+        pointer-events: all;
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    .more .more-menu .more-item {
+        padding: 7px 0;
+        box-shadow: inset 0px -30px 5px -30px rgba(255, 255, 255, 0.2);
+        transition: 0.3s;
+    }
+
+    .more .more-menu .more-item:hover {
+        background: #4080ef;
+    }
+
+    .menu-btn {
+        right: 80px;
+        display: flex;
+        cursor: pointer;
+        transition: 2s;
+    }
+
+    #sn {
+        position: static;
+        display: none;
+    }
+
+    .item {
+        transition: transform 350ms;
+    }
+
+    .item:hover {
+        transform: translateY(-5px);
+        border-bottom: 2px solid grey;
+    }
+    .navigation .menu {
+        display: block;
+    }
+
+    .navigation .hamber {
+        display: none;
+    }
+    .toggle {
+        display: none;
+    }
+
+    @media screen and (max-width: 1400px) {
+    }
+
+    @media screen and (max-width: 1250px) {
+        header {
+            padding: 0 100px;
+        }
+    }
+
+    @media screen and (max-width: 974px) {
+        header {
+            padding: 0 63px;
+        }
+        .menu-item {
+            padding: 0px 14px;
+        }
+    }
+
+    @media screen and (max-width: 797px) {
+        header {
+            padding: 0 60px;
+        }
+        .menu-item {
+            padding: 0px 12px;
+        }
+    }
+    @media screen and (max-width: 786px) {
+        header {
+            display: flex;
+            padding: 0 16px;
+        }
+
+        header .navigation .menu {
+            display: block;
+            justify-content: center;
+            list-style: none;
+            user-select: none;
+            padding: 0px;
+        }
+
+        .navigation {
+            position: absolute;
+            top: 72px;
+            width: 100%;
+            right: 0%;
+            background-color: #fcf4ed;
+        }
+        .menu-item {
+            margin-left: 8px;
+        }
+
+        header .navigation {
+            display: flex;
+            align-items: center;
+            line-height: 60px;
+        }
+
+        .menu-item .sub-menu {
+            position: absolute;
+            top: 50px;
+            left: 30px;
+        }
+
+        /* Hide the menu and show the hamburger icon */
+        .navigation .menu {
+            display: none;
+        }
+
+        .navigation .hamber {
+            display: block;
+        }
+
+        /* Hide menu items when not active */
+        .navigation .menu:not(.active) .menu-item {
+            display: none;
+        }
+
+        /* Style the hamburger toggle */
+        .toggle {
+            display: block;
+            cursor: pointer;
+            /* Add your styling for the hamburger icon here */
+        }
+
+        /* Add styles for the active menu (displayed when the hamburger is clicked) */
+        .navigation.active .menu {
+            display: block;
+            /* Add styling for the mobile menu here */
+        }
+
+        .navigation.active .toggle {
+            /* Add styling for the active hamburger icon here */
+        }
+    }
+
+    @media screen and (max-width: 425px) {
+        .menu-item {
+            font-size: 18px;
+        }
+        header {
+            line-height: 50px;
+        }
+    }
+</style>
+<script>
+    const toggle = document.querySelector(".toggle");
+    const menu = document.querySelector(".menu");
+    const navigation = document.querySelector(".navigation");
+
+    function toggleNavMenu() {
+        if (navigation.classList.contains("active")) {
+            navigation.classList.remove("active");
+            menu.classList.remove("active"); // Remove the active class from menu
+        } else {
+            navigation.classList.add("active");
+            menu.classList.add("active"); // Add the active class to menu
+        }
+    }
+
+    toggle.addEventListener("click", toggleNavMenu, false);
+</script>

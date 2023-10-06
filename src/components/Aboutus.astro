@@ -1,0 +1,124 @@
+---
+import play from "../images/playcircle.png";
+import "../styles/global.css";
+---
+
+<section class="bringreport">
+    <div class="container mx-auto">
+        <div>
+            <div><h1 class="bringhead">The ReportSmith Story</h1></div>
+            <div class="flex justify-center">
+                <div
+                    class="columns-1 lg:w-9/12 md:w-10/12 sm:w-11/12 w-11/12 videobring"
+                >
+                    <div class="playsize"><img src={play.src} alt="" /></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="reportcontext flex flex-row justify-center">
+        <div
+            class="content text-center lg:basis-1/5 md:basis-3/5 sm:3/5 basis-3/5"
+        >
+            <span class="reportspan">
+                Reportsmith, a beacon of design artistry,Crafts reports that
+                captivate, setting minds free.With expertise and care, they
+                bring data alive,Creating visuals that truly thrive.
+            </span>
+        </div>
+    </div>
+</section>
+
+<style>
+    .playsize {
+        width: 100px;
+        height: auto;
+    }
+
+    .bringreport {
+        background: #fcf4ed;
+        /* height: calc(100vh - 80px); */
+    }
+    .bringhead {
+        font-family: "DM Serif Display";
+        font-size: 64px;
+        font-weight: 400;
+        line-height: 88px;
+        letter-spacing: 0em;
+        text-align: center;
+        margin-top: 80px;
+        padding: 30px 0px;
+    }
+
+    .videobring {
+        background: #fff;
+        height: 66vh;
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .content {
+        padding: 0px 12px;
+        /* width: 370px; */
+        color: #f5f5f5;
+        font-family: "Open Sans";
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 26px; /* 162.5% */
+    }
+    .reportcontext {
+        background: #0047ab;
+        padding: 50px 0px;
+        /* height: 192px; */
+        margin-top: 50px;
+    }
+    .reportspan {
+        color: #f5f5f5;
+        text-align: center;
+        font-family: "Open Sans";
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 26px; /* 162.5% */
+    }
+    @media screen and (max-width: 1200px) {
+        .bringhead {
+            font-size: 50px;
+        }
+        .reportspan {
+            font-size: 14px;
+        }
+    }
+
+    @media screen and (max-width: 1024px) {
+        .reportspan {
+            font-size: 12px;
+        }
+        .bringhead {
+            font-size: 45px;
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        .bringhead {
+            font-size: 38px;
+        }
+    }
+
+    @media screen and (max-width: 425px) {
+        .bringhead {
+            font-size: 35px;
+            line-height: 49px;
+        }
+        .reportspan {
+            font-size: 12px;
+            line-height: normal;
+        }
+        .reportcontext {
+            padding: 24px 0px;
+        }
+        .playsize {
+            width: 70px;
+        }
+    }
+</style>
